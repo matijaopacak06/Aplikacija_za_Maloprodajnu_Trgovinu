@@ -10,5 +10,14 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.klase
     {
         int kolicina;
         float cijena;
+
+        public StavkaRacuna(int kolicina, float cijena)
+        {
+            this.Kolicina = kolicina;
+            this.Cijena = cijena;
+        }
+
+        public int Kolicina { get => kolicina; set => kolicina = value; }
+        public float Cijena { get => cijena; set => cijena = value; }
     }
 }

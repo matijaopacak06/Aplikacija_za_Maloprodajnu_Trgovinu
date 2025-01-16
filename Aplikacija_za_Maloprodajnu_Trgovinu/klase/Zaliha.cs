@@ -11,5 +11,14 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.klase
     {
         int ID_Zaliha;
         int Kolicina;
+
+        public Zaliha(int iD_Zaliha, int kolicina)
+        {
+            ID_Zaliha1 = iD_Zaliha;
+            Kolicina1 = kolicina;
+        }
+
+        public int ID_Zaliha1 { get => ID_Zaliha; set => ID_Zaliha = value; }
+        public int Kolicina1 { get => Kolicina; set => Kolicina = value; }
     }
 }

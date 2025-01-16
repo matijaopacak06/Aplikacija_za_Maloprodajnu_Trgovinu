@@ -10,5 +10,14 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.klase
     {
         string NazivDrzave;
         string PostanskiBroj;
+
+        public Drzava(string nazivDrzave, string postanskiBroj)
+        {
+            NazivDrzave1 = nazivDrzave;
+            PostanskiBroj1 = postanskiBroj;
+        }
+
+        public string NazivDrzave1 { get => NazivDrzave; set => NazivDrzave = value; }
+        public string PostanskiBroj1 { get => PostanskiBroj; set => PostanskiBroj = value; }
     }
 }
