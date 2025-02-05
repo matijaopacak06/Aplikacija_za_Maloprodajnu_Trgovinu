@@ -94,6 +94,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -110,6 +111,21 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="grafika\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trgovina.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trgovina2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\racun.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kasa21.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
