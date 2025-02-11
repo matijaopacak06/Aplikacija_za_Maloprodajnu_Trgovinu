@@ -14,8 +14,9 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
 {
     public partial class Pocetna : Form
     {
-       private DataTable dtProizvodi = new DataTable(); //kreiranje nove tablice za proizvode
-        private string xmlFilePath = "Trgovina.xml"; // putanja do XML fajla
+       
+        private string xmlFilePath = AppDomain.CurrentDomain.BaseDirectory + "\"C:\\\\Users\\\\Učenik\\\\source\\\\repos\\\\Aplikacija_za_Maloprodajnu_Trgovinu\\\\Aplikacija_za_Maloprodajnu_Trgovinu\";"; // putanja do XML fajla
+
         public Pocetna()
         {
             InitializeComponent();
@@ -42,21 +43,88 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
             Racun racunForma = new Racun(); // Kreiram formu Racun
             racunForma.Show(); // Prikazujemo formu kao novi  prozor
 
+
+            string odabranaKategorija = comboBoxKategorija.SelectedItem.ToString();
+            string nazivProizvoda = textBoxNazivProizvoda.Text.Trim();
+            int kolicinaKupovina = (int)numericUpDownKolicina.Value;
+
+            if (string.IsNullOrEmpty(nazivProizvoda) || kolicinaKupovina <= 0)
+            {
+                MessageBox.Show("Molimo unesite naziv proizvoda i količinu veću od 0.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                XDocument xmlDoc = XDocument.Load(xmlFilePath);
+                var proizvod = xmlDoc.Descendants("Proizvod")
+                                     .FirstOrDefault(p => (string)p.Element("Naziv") == nazivProizvoda &&
+                                                          (string)p.Element("Kategorija") == odabranaKategorija);
+
+                if (proizvod != null)
+                {
+                    int trenutnaKolicina = int.Parse(proizvod.Element("Kolicina").Value);
+                    decimal cijena = decimal.Parse(proizvod.Element("Cijena").Value);
+
+                    if (kolicinaKupovina > trenutnaKolicina)
+                    {
+                        MessageBox.Show("Nema dovoljno proizvoda na stanju.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+
+                    // Oduzimanje kupljene količine
+                    proizvod.Element("Kolicina").Value = (trenutnaKolicina - kolicinaKupovina).ToString();
+                    xmlDoc.Save(xmlFilePath);
+
+                    // Dodajemo proizvod u listu kupljenih proizvoda
+                    List<Tuple<string, int, decimal>> listaProizvoda = new List<Tuple<string, int, decimal>>
+            {
+                new Tuple<string, int, decimal>(nazivProizvoda, kolicinaKupovina, cijena)
+            };
+
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Proizvod nije pronađen u odabranoj kategoriji.", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Greška pri ažuriranju XML fajla: " + ex.Message);
+            }
         }
 
         private void Pocetna_Load(object sender, EventArgs e)
         {
             comboBoxKategorija.SelectedIndex = 0; // postavljanje početne vrijednosti za combobox
 
-            //postavljanje kolone u DataTable
-            dtProizvodi.Columns.Add("ID");
-            dtProizvodi.Columns.Add("Naziv");
-            dtProizvodi.Columns.Add("Kategorija");
-            dtProizvodi.Columns.Add("Cijena");
-            dtProizvodi.Columns.Add("Količina");
+            UcitajKategorije();
 
-            
+
+
+
         }
+        private void UcitajKategorije()
+        {
+            try
+            {
+                XDocument xmlDoc = XDocument.Load(xmlFilePath); // ucitava dokumente iz xml fajla
+                var kategorije = xmlDoc.Descendants("Proizvod") // pronalazi sve proizvode
+                                       .Select(p => (string)p.Element("Kategorija")) // uzima vrijednost iz kategorije
+                                       .Distinct() // svaka kategorija bude u listi
+                                       .ToList(); // onda pretvara rezultat u listu
+
+                comboBoxKategorija.Items.AddRange(kategorije.ToArray()); // dodaje sve kategorije u combobox
+                comboBoxKategorija.SelectedIndex = 0; // Postavi prvu kategoriju
+            }
+            catch (Exception ex)
+            {
+               
+            }
+        
+
+    }
 
         private void btnIzbriši_Click(object sender, EventArgs e)
         {
