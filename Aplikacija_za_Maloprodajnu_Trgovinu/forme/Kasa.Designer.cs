@@ -1,6 +1,6 @@
 ﻿namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
 {
-    partial class Pocetna
+    partial class Kasa
     {
         /// <summary>
         /// Required designer variable.
@@ -28,40 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.textBoxNazivProizvoda = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.numericUpDownKolicina = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.comboBoxKategorija = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnIzbriši = new System.Windows.Forms.Button();
-            this.btnUredi = new System.Windows.Forms.Button();
-            this.btnIzdajRacun = new System.Windows.Forms.Button();
             this.btnDodajProizvoda = new System.Windows.Forms.Button();
-            this.btnDodajKupca = new System.Windows.Forms.Button();
-            this.Kategorija = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Naziv_Proizvoda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Količina = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKolicina)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Kategorija,
-            this.Naziv_Proizvoda,
-            this.Količina});
-            this.dataGridView1.Location = new System.Drawing.Point(373, 12);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(513, 263);
-            this.dataGridView1.TabIndex = 0;
             // 
             // textBoxNazivProizvoda
             // 
@@ -98,7 +73,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(91, 27);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Kolicina:";
+            this.label2.Text = "Količina:";
             // 
             // comboBoxKategorija
             // 
@@ -124,43 +99,10 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Kategorija:";
             // 
-            // btnIzbriši
-            // 
-            this.btnIzbriši.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnIzbriši.Location = new System.Drawing.Point(383, 305);
-            this.btnIzbriši.Name = "btnIzbriši";
-            this.btnIzbriši.Size = new System.Drawing.Size(151, 51);
-            this.btnIzbriši.TabIndex = 10;
-            this.btnIzbriši.Text = "Izbriši proizvod";
-            this.btnIzbriši.UseVisualStyleBackColor = true;
-            this.btnIzbriši.Click += new System.EventHandler(this.btnIzbriši_Click);
-            // 
-            // btnUredi
-            // 
-            this.btnUredi.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnUredi.Location = new System.Drawing.Point(584, 305);
-            this.btnUredi.Name = "btnUredi";
-            this.btnUredi.Size = new System.Drawing.Size(151, 51);
-            this.btnUredi.TabIndex = 11;
-            this.btnUredi.Text = "Uredi proizvod";
-            this.btnUredi.UseVisualStyleBackColor = true;
-            this.btnUredi.Click += new System.EventHandler(this.btnUredi_Click);
-            // 
-            // btnIzdajRacun
-            // 
-            this.btnIzdajRacun.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnIzdajRacun.Location = new System.Drawing.Point(735, 383);
-            this.btnIzdajRacun.Name = "btnIzdajRacun";
-            this.btnIzdajRacun.Size = new System.Drawing.Size(151, 51);
-            this.btnIzdajRacun.TabIndex = 12;
-            this.btnIzdajRacun.Text = "Izdaj  Racun";
-            this.btnIzdajRacun.UseVisualStyleBackColor = true;
-            this.btnIzdajRacun.Click += new System.EventHandler(this.btnIzdajRacun_Click);
-            // 
             // btnDodajProizvoda
             // 
             this.btnDodajProizvoda.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnDodajProizvoda.Location = new System.Drawing.Point(166, 305);
+            this.btnDodajProizvoda.Location = new System.Drawing.Point(33, 267);
             this.btnDodajProizvoda.Name = "btnDodajProizvoda";
             this.btnDodajProizvoda.Size = new System.Drawing.Size(151, 51);
             this.btnDodajProizvoda.TabIndex = 9;
@@ -168,49 +110,13 @@
             this.btnDodajProizvoda.UseVisualStyleBackColor = true;
             this.btnDodajProizvoda.Click += new System.EventHandler(this.btnDodajProizvoda_Click);
             // 
-            // btnDodajKupca
-            // 
-            this.btnDodajKupca.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnDodajKupca.Location = new System.Drawing.Point(17, 383);
-            this.btnDodajKupca.Name = "btnDodajKupca";
-            this.btnDodajKupca.Size = new System.Drawing.Size(151, 51);
-            this.btnDodajKupca.TabIndex = 13;
-            this.btnDodajKupca.Text = "Dodaj kupca";
-            this.btnDodajKupca.UseVisualStyleBackColor = true;
-            this.btnDodajKupca.Click += new System.EventHandler(this.btnDodajKupca_Click);
-            // 
-            // Kategorija
-            // 
-            this.Kategorija.HeaderText = "Kategorija";
-            this.Kategorija.MinimumWidth = 8;
-            this.Kategorija.Name = "Kategorija";
-            this.Kategorija.Width = 150;
-            // 
-            // Naziv_Proizvoda
-            // 
-            this.Naziv_Proizvoda.HeaderText = "Naziv_proizvoda";
-            this.Naziv_Proizvoda.MinimumWidth = 8;
-            this.Naziv_Proizvoda.Name = "Naziv_Proizvoda";
-            this.Naziv_Proizvoda.Width = 150;
-            // 
-            // Količina
-            // 
-            this.Količina.HeaderText = "Količina";
-            this.Količina.MinimumWidth = 8;
-            this.Količina.Name = "Količina";
-            this.Količina.Width = 150;
-            // 
-            // Pocetna
+            // Kasa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.trgovina2;
-            this.ClientSize = new System.Drawing.Size(959, 495);
-            this.Controls.Add(this.btnDodajKupca);
-            this.Controls.Add(this.btnIzdajRacun);
-            this.Controls.Add(this.btnUredi);
-            this.Controls.Add(this.btnIzbriši);
+            this.ClientSize = new System.Drawing.Size(513, 357);
             this.Controls.Add(this.btnDodajProizvoda);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxKategorija);
@@ -218,12 +124,10 @@
             this.Controls.Add(this.numericUpDownKolicina);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNazivProizvoda);
-            this.Controls.Add(this.dataGridView1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.Name = "Pocetna";
+            this.Name = "Kasa";
             this.Text = "Pocetna";
             this.Load += new System.EventHandler(this.Pocetna_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownKolicina)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -231,21 +135,12 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TextBox textBoxNazivProizvoda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numericUpDownKolicina;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboBoxKategorija;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnIzbriši;
-        private System.Windows.Forms.Button btnUredi;
-        private System.Windows.Forms.Button btnIzdajRacun;
         private System.Windows.Forms.Button btnDodajProizvoda;
-        private System.Windows.Forms.Button btnDodajKupca;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kategorija;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Naziv_Proizvoda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Količina;
     }
 }

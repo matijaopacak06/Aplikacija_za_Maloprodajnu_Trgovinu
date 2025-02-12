@@ -16,7 +16,7 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new forme.Pocetna());
+            Application.Run(new forme.GlavnaForma());
         }
     }
 }

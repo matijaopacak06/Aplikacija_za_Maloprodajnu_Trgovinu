@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="forme\GlavnaForma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\GlavnaForma.Designer.cs">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </Compile>
     <Compile Include="forme\Kupci.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="forme\Kupci.Designer.cs">
       <DependentUpon>Kupci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forme\Proizvodi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\Proizvodi.Designer.cs">
+      <DependentUpon>Proizvodi.cs</DependentUpon>
     </Compile>
     <Compile Include="forme\Racun.cs">
       <SubType>Form</SubType>
@@ -58,11 +70,11 @@
     <Compile Include="forme\Racun.Designer.cs">
       <DependentUpon>Racun.cs</DependentUpon>
     </Compile>
-    <Compile Include="forme\Pocetna.cs">
+    <Compile Include="forme\Kasa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="forme\Pocetna.Designer.cs">
-      <DependentUpon>Pocetna.cs</DependentUpon>
+    <Compile Include="forme\Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
     </Compile>
     <Compile Include="klase\AdresaDobavljaca.cs" />
     <Compile Include="klase\AdresaKupca.cs" />
@@ -77,14 +89,20 @@
     <Compile Include="klase\Zaposlenik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="forme\GlavnaForma.resx">
+      <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="forme\Kupci.resx">
       <DependentUpon>Kupci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\Proizvodi.resx">
+      <DependentUpon>Proizvodi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forme\Racun.resx">
       <DependentUpon>Racun.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="forme\Pocetna.resx">
-      <DependentUpon>Pocetna.cs</DependentUpon>
+    <EmbeddedResource Include="forme\Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

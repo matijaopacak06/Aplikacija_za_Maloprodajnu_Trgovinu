@@ -103,9 +103,9 @@
             this.label3.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label3.Location = new System.Drawing.Point(50, 150);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 27);
+            this.label3.Size = new System.Drawing.Size(82, 27);
             this.label3.TabIndex = 6;
-            this.label3.Text = "E-mail:";
+            this.label3.Text = "Adresa:";
             // 
             // button1
             // 
@@ -130,7 +130,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(531, 306);
+            this.button3.Location = new System.Drawing.Point(554, 306);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(120, 47);
             this.button3.TabIndex = 9;
