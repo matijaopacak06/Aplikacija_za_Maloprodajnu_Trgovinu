@@ -116,7 +116,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.trgovina2;
-            this.ClientSize = new System.Drawing.Size(513, 357);
+            this.ClientSize = new System.Drawing.Size(548, 356);
             this.Controls.Add(this.btnDodajProizvoda);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBoxKategorija);

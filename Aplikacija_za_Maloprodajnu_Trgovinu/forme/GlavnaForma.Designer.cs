@@ -31,7 +31,7 @@
             this.btnKupac = new System.Windows.Forms.Button();
             this.btnKasa = new System.Windows.Forms.Button();
             this.btnRačun = new System.Windows.Forms.Button();
-            this.btnProizvod = new System.Windows.Forms.Button();
+            this.btnProizvodi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnKupac
@@ -48,7 +48,7 @@
             // btnKasa
             // 
             this.btnKasa.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnKasa.Location = new System.Drawing.Point(446, 284);
+            this.btnKasa.Location = new System.Drawing.Point(12, 284);
             this.btnKasa.Name = "btnKasa";
             this.btnKasa.Size = new System.Drawing.Size(171, 63);
             this.btnKasa.TabIndex = 1;
@@ -69,17 +69,18 @@
             this.btnRačun.UseVisualStyleBackColor = false;
             this.btnRačun.Click += new System.EventHandler(this.btnRačun_Click);
             // 
-            // btnProizvod
+            // btnProizvodi
             // 
-            this.btnProizvod.BackColor = System.Drawing.Color.Transparent;
-            this.btnProizvod.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnProizvod.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnProizvod.Location = new System.Drawing.Point(12, 284);
-            this.btnProizvod.Name = "btnProizvod";
-            this.btnProizvod.Size = new System.Drawing.Size(171, 63);
-            this.btnProizvod.TabIndex = 3;
-            this.btnProizvod.Text = "Proizvod";
-            this.btnProizvod.UseVisualStyleBackColor = false;
+            this.btnProizvodi.BackColor = System.Drawing.Color.Transparent;
+            this.btnProizvodi.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnProizvodi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnProizvodi.Location = new System.Drawing.Point(446, 284);
+            this.btnProizvodi.Name = "btnProizvodi";
+            this.btnProizvodi.Size = new System.Drawing.Size(171, 63);
+            this.btnProizvodi.TabIndex = 3;
+            this.btnProizvodi.Text = "Proizvodi";
+            this.btnProizvodi.UseVisualStyleBackColor = false;
+            this.btnProizvodi.Click += new System.EventHandler(this.button1_Click);
             // 
             // GlavnaForma
             // 
@@ -87,7 +88,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.trgovina2;
             this.ClientSize = new System.Drawing.Size(644, 359);
-            this.Controls.Add(this.btnProizvod);
+            this.Controls.Add(this.btnProizvodi);
             this.Controls.Add(this.btnRačun);
             this.Controls.Add(this.btnKasa);
             this.Controls.Add(this.btnKupac);
@@ -102,6 +103,6 @@
         private System.Windows.Forms.Button btnKupac;
         private System.Windows.Forms.Button btnKasa;
         private System.Windows.Forms.Button btnRačun;
-        private System.Windows.Forms.Button btnProizvod;
+        private System.Windows.Forms.Button btnProizvodi;
     }
 }

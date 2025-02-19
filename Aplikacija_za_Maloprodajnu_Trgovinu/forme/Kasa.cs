@@ -31,7 +31,7 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
             string nazivProizvoda = textBoxNazivProizvoda.Text; //upisivanje  vrijednosti iz naziva proizvoda
             int kolicina = (int)numericUpDownKolicina.Value; // upisivanje kolicine proizvoda
 
-            dataGridView1.Rows.Add(kategorija, nazivProizvoda, kolicina);
+           
         }
 
         

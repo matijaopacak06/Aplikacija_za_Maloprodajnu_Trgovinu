@@ -35,5 +35,11 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
             Racun racunForm = new Racun();
             racunForm.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Proizvodi proizvodiForm = new Proizvodi();
+            proizvodiForm.Show();
+        }
     }
 }
