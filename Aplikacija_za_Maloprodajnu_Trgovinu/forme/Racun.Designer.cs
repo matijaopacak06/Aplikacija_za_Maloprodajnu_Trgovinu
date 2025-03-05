@@ -30,6 +30,7 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Kupac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kategorija = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Proizvod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Količina = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,16 +45,18 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Kupac,
+            this.Kategorija,
             this.Proizvod,
             this.Cijena,
             this.Količina,
             this.Popust,
             this.Ukupna_cijena});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 3);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1411, 358);
+            this.dataGridView1.Size = new System.Drawing.Size(1254, 286);
             this.dataGridView1.TabIndex = 7;
             // 
             // Kupac
@@ -62,6 +65,13 @@
             this.Kupac.MinimumWidth = 8;
             this.Kupac.Name = "Kupac";
             this.Kupac.Width = 150;
+            // 
+            // Kategorija
+            // 
+            this.Kategorija.HeaderText = "Kategorija";
+            this.Kategorija.MinimumWidth = 6;
+            this.Kategorija.Name = "Kategorija";
+            this.Kategorija.Width = 125;
             // 
             // Proizvod
             // 
@@ -100,12 +110,13 @@
             // 
             // Racun
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.racun;
-            this.ClientSize = new System.Drawing.Size(1435, 450);
+            this.ClientSize = new System.Drawing.Size(1276, 360);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Racun";
             this.Text = "Racun";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -116,6 +127,7 @@
         #endregion
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Kupac;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kategorija;
         private System.Windows.Forms.DataGridViewTextBoxColumn Proizvod;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cijena;
         private System.Windows.Forms.DataGridViewTextBoxColumn Količina;

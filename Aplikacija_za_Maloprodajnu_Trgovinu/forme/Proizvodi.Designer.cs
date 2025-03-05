@@ -32,11 +32,11 @@
             this.btnUcitaj = new System.Windows.Forms.Button();
             this.btnSpremi = new System.Windows.Forms.Button();
             this.ID_Proizvod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Kategorija = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Naziv_Proizvoda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Opis_proizvoda = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Količina = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Naziv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Opis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Kategorija = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Količina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Jedinica_mjere = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -48,25 +48,27 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID_Proizvod,
-            this.Kategorija,
-            this.Naziv_Proizvoda,
-            this.Opis_proizvoda,
-            this.Količina,
+            this.Naziv,
+            this.Opis,
             this.Cijena,
+            this.Kategorija,
+            this.Količina,
             this.Jedinica_mjere});
-            this.dataGridView1.Location = new System.Drawing.Point(239, 12);
+            this.dataGridView1.Location = new System.Drawing.Point(178, 11);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(1002, 389);
+            this.dataGridView1.Size = new System.Drawing.Size(1254, 311);
             this.dataGridView1.TabIndex = 11;
             // 
             // btnUcitaj
             // 
             this.btnUcitaj.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnUcitaj.Location = new System.Drawing.Point(32, 83);
+            this.btnUcitaj.Location = new System.Drawing.Point(28, 66);
+            this.btnUcitaj.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUcitaj.Name = "btnUcitaj";
-            this.btnUcitaj.Size = new System.Drawing.Size(151, 51);
+            this.btnUcitaj.Size = new System.Drawing.Size(134, 41);
             this.btnUcitaj.TabIndex = 12;
             this.btnUcitaj.Text = "Ucitaj";
             this.btnUcitaj.UseVisualStyleBackColor = true;
@@ -75,9 +77,10 @@
             // btnSpremi
             // 
             this.btnSpremi.Font = new System.Drawing.Font("Palatino Linotype", 9F);
-            this.btnSpremi.Location = new System.Drawing.Point(32, 219);
+            this.btnSpremi.Location = new System.Drawing.Point(28, 175);
+            this.btnSpremi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSpremi.Name = "btnSpremi";
-            this.btnSpremi.Size = new System.Drawing.Size(151, 53);
+            this.btnSpremi.Size = new System.Drawing.Size(134, 42);
             this.btnSpremi.TabIndex = 13;
             this.btnSpremi.Text = "Spremi";
             this.btnSpremi.UseVisualStyleBackColor = true;
@@ -89,33 +92,19 @@
             this.ID_Proizvod.Name = "ID_Proizvod";
             this.ID_Proizvod.Width = 150;
             // 
-            // Kategorija
+            // Naziv
             // 
-            this.Kategorija.HeaderText = "Kategorija";
-            this.Kategorija.MinimumWidth = 8;
-            this.Kategorija.Name = "Kategorija";
-            this.Kategorija.Width = 150;
+            this.Naziv.HeaderText = "Naziv";
+            this.Naziv.MinimumWidth = 8;
+            this.Naziv.Name = "Naziv";
+            this.Naziv.Width = 150;
             // 
-            // Naziv_Proizvoda
+            // Opis
             // 
-            this.Naziv_Proizvoda.HeaderText = "Naziv_proizvoda";
-            this.Naziv_Proizvoda.MinimumWidth = 8;
-            this.Naziv_Proizvoda.Name = "Naziv_Proizvoda";
-            this.Naziv_Proizvoda.Width = 150;
-            // 
-            // Opis_proizvoda
-            // 
-            this.Opis_proizvoda.HeaderText = "Opis_proizvoda";
-            this.Opis_proizvoda.MinimumWidth = 8;
-            this.Opis_proizvoda.Name = "Opis_proizvoda";
-            this.Opis_proizvoda.Width = 150;
-            // 
-            // Količina
-            // 
-            this.Količina.HeaderText = "Količina";
-            this.Količina.MinimumWidth = 8;
-            this.Količina.Name = "Količina";
-            this.Količina.Width = 150;
+            this.Opis.HeaderText = "Opis";
+            this.Opis.MinimumWidth = 8;
+            this.Opis.Name = "Opis";
+            this.Opis.Width = 150;
             // 
             // Cijena
             // 
@@ -123,6 +112,20 @@
             this.Cijena.MinimumWidth = 8;
             this.Cijena.Name = "Cijena";
             this.Cijena.Width = 150;
+            // 
+            // Kategorija
+            // 
+            this.Kategorija.HeaderText = "Kategorija";
+            this.Kategorija.MinimumWidth = 6;
+            this.Kategorija.Name = "Kategorija";
+            this.Kategorija.Width = 125;
+            // 
+            // Količina
+            // 
+            this.Količina.HeaderText = "Količina";
+            this.Količina.MinimumWidth = 8;
+            this.Količina.Name = "Količina";
+            this.Količina.Width = 150;
             // 
             // Jedinica_mjere
             // 
@@ -133,13 +136,14 @@
             // 
             // Proizvodi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.trgovina2;
-            this.ClientSize = new System.Drawing.Size(1253, 450);
+            this.ClientSize = new System.Drawing.Size(1464, 360);
             this.Controls.Add(this.btnSpremi);
             this.Controls.Add(this.btnUcitaj);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Proizvodi";
             this.Text = "Proizvodi";
             this.Load += new System.EventHandler(this.Proizvodi_Load);
@@ -154,11 +158,11 @@
         private System.Windows.Forms.Button btnUcitaj;
         private System.Windows.Forms.Button btnSpremi;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_Proizvod;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Kategorija;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Naziv_Proizvoda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Opis_proizvoda;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Količina;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Naziv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Opis;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cijena;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Kategorija;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Količina;
         private System.Windows.Forms.DataGridViewTextBoxColumn Jedinica_mjere;
     }
 }

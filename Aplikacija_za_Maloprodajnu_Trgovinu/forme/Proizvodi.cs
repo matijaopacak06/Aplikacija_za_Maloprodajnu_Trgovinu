@@ -14,7 +14,7 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
 {
     public partial class Proizvodi : Form
     {
-        private string xmlFile = "proizvodi.xml";
+        private string xmlFile = "proizvodi.xml"; //Provjerava dali xml datoteka postoji 
         public Proizvodi()
         {
             InitializeComponent();
@@ -37,8 +37,8 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
                 foreach (XElement element in doc.Descendants("Proizvod"))
                 {
                     dataGridView1.Rows.Add(
-                        element.Attribute("ID_Proizvod").Value, // Dohvaćamo atribut ID_Proizvod
-                        element.Element("Naziv").Value,
+                        element.Attribute("ID_Proizvod")?.Value ?? "0", //Dohvaća atribut od ID proizvoda
+                        element.Element("Naziv").Value, 
                         element.Element("Opis").Value,
                         element.Element("Cijena").Value,
                         element.Element("Kategorija").Value,
@@ -48,7 +48,7 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
             }
             else
             {
-                MessageBox.Show("XML datoteka ne postoji!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("XML datoteka ne postoji!", "Greška", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

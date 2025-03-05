@@ -24,11 +24,7 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
             proizvodiForm.Show(); //otvaramo  prozor
         }
 
-        private void btnKupac_Click(object sender, EventArgs e)
-        {
-            Kupci kupciForm = new Kupci();
-            kupciForm.Show();
-        }
+      
 
         private void btnRačun_Click(object sender, EventArgs e)
         {
