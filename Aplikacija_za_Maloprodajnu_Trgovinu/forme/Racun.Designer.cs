@@ -36,6 +36,7 @@
             this.Količina = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Popust = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ukupna_cijena = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPrikaziRacun = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -108,6 +109,17 @@
             this.Ukupna_cijena.Name = "Ukupna_cijena";
             this.Ukupna_cijena.Width = 150;
             // 
+            // btnPrikaziRacun
+            // 
+            this.btnPrikaziRacun.Font = new System.Drawing.Font("Palatino Linotype", 9F);
+            this.btnPrikaziRacun.Location = new System.Drawing.Point(11, 308);
+            this.btnPrikaziRacun.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrikaziRacun.Name = "btnPrikaziRacun";
+            this.btnPrikaziRacun.Size = new System.Drawing.Size(134, 41);
+            this.btnPrikaziRacun.TabIndex = 13;
+            this.btnPrikaziRacun.Text = "Prikaži račun";
+            this.btnPrikaziRacun.UseVisualStyleBackColor = true;
+            // 
             // Racun
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -115,6 +127,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.racun;
             this.ClientSize = new System.Drawing.Size(1276, 360);
+            this.Controls.Add(this.btnPrikaziRacun);
             this.Controls.Add(this.dataGridView1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Racun";
@@ -133,5 +146,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Količina;
         private System.Windows.Forms.DataGridViewTextBoxColumn Popust;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ukupna_cijena;
+        private System.Windows.Forms.Button btnPrikaziRacun;
     }
 }

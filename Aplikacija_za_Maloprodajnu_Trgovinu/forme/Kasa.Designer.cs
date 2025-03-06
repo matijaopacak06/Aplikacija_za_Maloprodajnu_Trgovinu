@@ -53,7 +53,7 @@
             this.label1.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(3, 110);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 27);
+            this.label1.Size = new System.Drawing.Size(139, 23);
             this.label1.TabIndex = 2;
             this.label1.Text = "Naziv Proizvoda:";
             // 
@@ -61,7 +61,7 @@
             // 
             this.numericUpDownKolicina.Location = new System.Drawing.Point(234, 195);
             this.numericUpDownKolicina.Name = "numericUpDownKolicina";
-            this.numericUpDownKolicina.Size = new System.Drawing.Size(133, 28);
+            this.numericUpDownKolicina.Size = new System.Drawing.Size(133, 24);
             this.numericUpDownKolicina.TabIndex = 3;
             // 
             // label2
@@ -71,7 +71,7 @@
             this.label2.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label2.Location = new System.Drawing.Point(44, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 27);
+            this.label2.Size = new System.Drawing.Size(77, 23);
             this.label2.TabIndex = 4;
             this.label2.Text = "Količina:";
             // 
@@ -79,13 +79,16 @@
             // 
             this.comboBoxKategorija.FormattingEnabled = true;
             this.comboBoxKategorija.Items.AddRange(new object[] {
+            "",
             "Hrana",
             "Piće",
             "Higijena",
-            "Kućanske potrepštine"});
+            "Kućanske potrepštine",
+            "Elektronika",
+            "Alati i oprema"});
             this.comboBoxKategorija.Location = new System.Drawing.Point(233, 34);
             this.comboBoxKategorija.Name = "comboBoxKategorija";
-            this.comboBoxKategorija.Size = new System.Drawing.Size(134, 30);
+            this.comboBoxKategorija.Size = new System.Drawing.Size(134, 26);
             this.comboBoxKategorija.TabIndex = 7;
             // 
             // label4
@@ -95,7 +98,7 @@
             this.label4.Font = new System.Drawing.Font("Palatino Linotype", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label4.Location = new System.Drawing.Point(44, 33);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(110, 27);
+            this.label4.Size = new System.Drawing.Size(93, 23);
             this.label4.TabIndex = 8;
             this.label4.Text = "Kategorija:";
             // 
@@ -112,7 +115,7 @@
             // 
             // Kasa
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = global::Aplikacija_za_Maloprodajnu_Trgovinu.Properties.Resources.trgovina2;

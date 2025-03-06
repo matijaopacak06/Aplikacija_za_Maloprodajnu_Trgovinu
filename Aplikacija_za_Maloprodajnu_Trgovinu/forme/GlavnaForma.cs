@@ -37,5 +37,11 @@ namespace Aplikacija_za_Maloprodajnu_Trgovinu.forme
             Proizvodi proizvodiForm = new Proizvodi();
             proizvodiForm.Show();
         }
+
+        private void btnKupci_Click(object sender, EventArgs e)
+        {
+            Kupci kupciForm = new Kupci();
+            kupciForm.Show();
+        }
     }
 }

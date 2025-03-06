@@ -52,6 +52,12 @@
     <Compile Include="forme\GlavnaForma.Designer.cs">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
     </Compile>
+    <Compile Include="forme\Kupci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forme\Kupci.Designer.cs">
+      <DependentUpon>Kupci.cs</DependentUpon>
+    </Compile>
     <Compile Include="forme\Proizvodi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -85,6 +91,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="forme\GlavnaForma.resx">
       <DependentUpon>GlavnaForma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forme\Kupci.resx">
+      <DependentUpon>Kupci.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forme\Proizvodi.resx">
       <DependentUpon>Proizvodi.cs</DependentUpon>
